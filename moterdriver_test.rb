@@ -10,9 +10,9 @@ driver = MoterDriver.new(pins[0], pins[1])
 
 for i in 0..5 do
   if i % 2 == 0
-    drive.cw
+    driver.cw
   else
-    drive.ccw
+    driver.ccw
   end
   sleep 0.5
 end
