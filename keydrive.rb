@@ -25,5 +25,7 @@ loop do
   elsif c == 's'
     driver.ccw
   end
-  sleep 0.5
+  sleep 0.1
 end
+
+gpio.unexport_all

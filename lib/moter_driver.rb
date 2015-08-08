@@ -22,14 +22,14 @@ class MoterDriver
 
   def cw
     brake
-    sleep 0.5
+    sleep 0.3
     output(0, @in1)
     output(1, @in2)
   end
 
   def ccw
     brake
-    sleep 0.5
+    sleep 0.3
     output(1, @in1)
     output(0, @in2)
   end
