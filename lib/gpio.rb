@@ -1,6 +1,6 @@
 class Gpio
-  @open_pins = []
   def initialize(pin_list)
+    @open_pins = []
     pin_list.each do |pin|
       export(pin.to_i)
       @open_pins.push(pin.to_i)
