@@ -1,6 +1,6 @@
 require 'io/console'
-require "gpio.rb"
-require "moter_driver.rb"
+require "./lib/gpio.rb"
+require "./lib/moter_driver.rb"
 
 pins = [20, 21]
 gpio = Gpio.new(pins)
