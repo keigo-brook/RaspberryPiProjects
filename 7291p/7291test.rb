@@ -18,6 +18,9 @@ for i in 0..5 do
   sleep 0.5
 end
 
+gpio.unexport(pins[0])
+gpio.unexport(pins[1])
+
 for i in 0..5 do
   if i % 2 == 0
     driver2.cw
@@ -27,4 +30,6 @@ for i in 0..5 do
   sleep 0.5
 end
 
-gpio.unexport_all
+gpio.unexport(pins[2])
+gpio.unexport(pins[3])
+
