@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Is there Nagashima?</title>
+</head>
+<body>
+    <form action="/" method="post" accept-charset="utf-8">
+        <button type="submit" value="submit">長島君いる ?</button>
+    </form>
+
+    <li id="<%= @history.id %>">
+        <p>Last Check Time: <%= @history.created_at %></p>
+        <div><%= @history.body %></div>
+    </li>
+    <p>Latest Nagashima</p>
+    <% if File.exists?('./public/nagashima.png') %>
+        <img src="nagashima.png" alt="">
+    <% end %>
+</body>
+</html>
