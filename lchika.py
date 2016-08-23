@@ -3,8 +3,8 @@ import RPi.GPIO as GPIO
 import time
 
 COUNT = 3
-PIN = 26
-GPIO.setmode(GPIO.BOARD)
+PIN = 21
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(PIN, GPIO.OUT)
 
 for _ in xrange(COUNT):

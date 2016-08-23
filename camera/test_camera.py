@@ -5,10 +5,10 @@ import time
 import picamera
 from paramiko import SSHClient, AutoAddPolicy
 
-HOST = '133.9.250.252'
+HOST = '192.168.2.1'
 PORT = 22
 USER = 'KeigoOgawa'
-PRIVATE_KEY = '/home/pi/.ssh/kattopi1_rsa'
+PRIVATE_KEY = '/home/pi/.ssh/id_rsa'
 
 
 def capture(name):
